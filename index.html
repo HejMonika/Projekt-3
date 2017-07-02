@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Sofia" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<nav class="nav navbar-default">
+	    <div class="container">
+	        <div class="navbar-header">
+	            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+	            <a class="navbar-brand" href="#">DO IT NOW</a>
+	        </div>
+	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	            <ul class="nav navbar-nav">
+	                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+	                <li><a href="#">O mnie</a></li>
+	                <li class="dropdown">
+	                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galeria <span class="caret"></span></a>
+	                    <ul class="dropdown-menu">
+	                        <li><a href="#">Ludzie</a></li>
+	                        <li><a href="#">Miejsca</a></li>
+	                        <li><a href="#">Chwile</a></li>
+	                    </ul>
+	                </li>
+	                <li><a href="#">Kontakt</a></li>
+	            </ul>
+	        </div>
+	    </div>
+	</nav>
+
+		<div id="myCarousel" class="carousel slide container" data-ride="carousel">
+			<ol class="carousel-indicators">
+			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			    <li data-target="#myCarousel" data-slide-to="1"></li>
+			    <li data-target="#myCarousel" data-slide-to="2"></li>
+			    <li data-target="#myCarousel" data-slide-to="3"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="item active example-1">
+					<h1>Czas na zmiany<br /><small>Dobrze o tym wiesz...</small></h1>
+					<button class="btn btn-primary btn-lg">ZACZYNAMY</button>
+				</div>
+				<div class="item example-2">        
+				</div>    
+				<div class="item example-3">        
+				</div>
+				<div class="item example-4">        
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+
+		<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#exampleModal">
+		  Co zamierzarz zrobić ze swoim życiem ?
+		</button>
+
+		<div id="exampleModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+		    	<div class="modal-content">
+			<!-- tutaj umieszczamy zawartość-->
+		    		<div class="modal-header">
+		         		<h4>Usiądź wygodnie</h4>
+		       		</div>
+		       		<div class="modal-body">
+		       			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies enim at eros consequat luctus. Cras tincidunt in lacus at ullamcorper. Sed finibus risus ac erat lobortis tempor. Nullam magna magna, ultricies sit amet dignissim semper, tincidunt sollicitudin arcu. Ut nec blandit libero. Praesent cursus laoreet lorem vitae elementum. Sed id porttitor ligula, id pharetra tellus. Aenean dapibus aliquam nunc, vel ornare augue. Nam congue lectus a tristique vulputate. </p>
+		    		</div>
+		       		<div class="modal-footer">
+		       			<p>Weż kartkę papieru i ołówek</p>
+		         		<button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
+		       		</div>
+				</div>
+			</div>
+		</div>
+
+	<div class="container">		
+		<div class="gallery">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12 photo">
+					<div class="thumbnail">
+						<div class="photo-x">
+							<img src="https://static.pexels.com/photos/117488/pexels-photo-117488.jpeg" alt="image" class="img-responsive center-block">
+						</div>
+                   		<div class="caption">
+                        	<p>Przespać je na kanapie?</p>
+                        </div>
+                   	</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 photo">
+					<div class="thumbnail">
+						<div class="photo-x">
+							<img src="https://static.pexels.com/photos/111287/pexels-photo-111287.jpeg" alt="image" class="img-responsive center-block">
+						</div>
+                   		<div class="caption">
+                        	<p>Wypełnić je muzyką?</p>
+                        </div>
+                   	</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 photo">
+					<div class="thumbnail">
+						<div class="photo-x">
+							<img src="https://static.pexels.com/photos/6389/hand-vintage-old-book-large.jpg" alt="image" class="img-responsive center-block">
+						</div>
+                   		<div class="caption">
+                        	<p>Zatonąć w książkach?</p>
+                        </div>
+                   	</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 photo">
+					<div class="thumbnail">
+						<div class="photo-x">
+							<img src="https://static.pexels.com/photos/35107/pexels-photo-large.jpg" alt="image" class="img-responsive center-block">
+						</div>
+                   		<div class="caption">
+                        	<p>Odkryć nieznane miejsca?</p>
+                        </div>
+                   	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>Coś dla ciała</th>
+					<th>Coś dla duszy</th>
+					<th>Coś dla umysłu</th>					
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Aenean ultricies mi vitae est</td>
+					<td>Aenean ultricies mi vitae est</td>
+					<td>Aenean ultricies mi vitae est</td>
+				</tr>
+				<tr>
+					<td>Aenean ultricies mi vitae est</td>
+					<td>Aenean ultricies mi vitae est</td>
+					<td>Aenean ultricies mi vitae est</td>
+				</tr>
+				<tr>
+					<td>Aenean ultricies mi vitae est</td>
+					<td>Aenean ultricies mi vitae est</td>
+					<td>Aenean ultricies mi vitae est</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<ul class="nav nav-tabs">
+				<li class="active"><a data-toggle="tab" href="#home">Człowiek</a></li>
+				<li><a data-toggle="tab" href="#menu1">Ciało</a></li>
+				<li><a data-toggle="tab" href="#menu2">Dusza</a></li>
+				<li><a data-toggle="tab" href="#menu3">Natura</a></li>
+		</ul>
+
+		<div class="tab-content">
+  			<div id="home" class="tab-pane fade in active">
+    			<h3>Kilka słów o człowieku jako o całości</h3>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies enim at eros consequat luctus. Cras tincidunt in lacus at ullamcorper. Sed finibus risus ac erat lobortis tempor. Nullam magna magna, ultricies sit amet dignissim semper, tincidunt sollicitudin arcu. Ut nec blandit libero. Praesent cursus laoreet lorem vitae elementum. Sed id porttitor ligula, id pharetra tellus. Aenean dapibus aliquam nunc, vel ornare augue. Nam congue lectus a tristique vulputate. Vivamus est ante, commodo non congue vel, efficitur a tellus. Pellentesque vulputate, leo eget pellentesque condimentum, quam massa aliquet dui, volutpat ultrices lectus diam quis ligula. Donec vel elit ornare elit vehicula tempor. Fusce facilisis, metus ut tincidunt rhoncus, sapien elit dignissim purus, eget vulputate enim ipsum convallis tellus. Vivamus id posuere turpis, a ullamcorper turpis. Donec vestibulum nisi vel lorem sollicitudin, ac efficitur nulla iaculis.</p>
+  			</div>
+  			<div id="menu1" class="tab-pane fade">
+    			<h3>Kilka słów o ciele ludzkim</h3>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies enim at eros consequat luctus. Cras tincidunt in lacus at ullamcorper. Sed finibus risus ac erat lobortis tempor. Nullam magna magna, ultricies sit amet dignissim semper, tincidunt sollicitudin arcu. Ut nec blandit libero. Praesent cursus laoreet lorem vitae elementum. Sed id porttitor ligula, id pharetra tellus. Aenean dapibus aliquam nunc, vel ornare augue. Nam congue lectus a tristique vulputate. Vivamus est ante, commodo non congue vel, efficitur a tellus. Pellentesque vulputate, leo eget pellentesque condimentum, quam massa aliquet dui, volutpat ultrices lectus diam quis ligula. Donec vel elit ornare elit vehicula tempor. Fusce facilisis, metus ut tincidunt rhoncus, sapien elit dignissim purus, eget vulputate enim ipsum convallis tellus. Vivamus id posuere turpis, a ullamcorper turpis. Donec vestibulum nisi vel lorem sollicitudin, ac efficitur nulla iaculis.</p>
+  			</div>
+  			<div id="menu2" class="tab-pane fade">
+    			<h3>Kilka słów o duszy</h3>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies enim at eros consequat luctus. Cras tincidunt in lacus at ullamcorper. Sed finibus risus ac erat lobortis tempor. Nullam magna magna, ultricies sit amet dignissim semper, tincidunt sollicitudin arcu. Ut nec blandit libero. Praesent cursus laoreet lorem vitae elementum. Sed id porttitor ligula, id pharetra tellus. Aenean dapibus aliquam nunc, vel ornare augue. Nam congue lectus a tristique vulputate. Vivamus est ante, commodo non congue vel, efficitur a tellus. Pellentesque vulputate, leo eget pellentesque condimentum, quam massa aliquet dui, volutpat ultrices lectus diam quis ligula. Donec vel elit ornare elit vehicula tempor. Fusce facilisis, metus ut tincidunt rhoncus, sapien elit dignissim purus, eget vulputate enim ipsum convallis tellus. Vivamus id posuere turpis, a ullamcorper turpis. Donec vestibulum nisi vel lorem sollicitudin, ac efficitur nulla iaculis..</p>
+  			</div>
+    		<div id="menu3" class="tab-pane fade">
+    			<h3>Kilka słów o matce naturze</h3>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies enim at eros consequat luctus. Cras tincidunt in lacus at ullamcorper. Sed finibus risus ac erat lobortis tempor. Nullam magna magna, ultricies sit amet dignissim semper,  tincidunt sollicitudin arcu. Ut nec blandit libero. Praesent cursus laoreet lorem vitae elementum. Sed id porttitor ligula, id pharetra tellus. Aenean dapibus aliquam nunc, vel ornare augue. Nam congue lectus a tristique vulputate. Vivamus est ante, commodo non congue vel, efficitur a tellus. Pellentesque vulputate, leo eget pellentesque condimentum, quam massa aliquet dui, volutpat ultrices lectus diam quis ligula. Donec vel elit ornare elit vehicula tempor. Fusce facilisis, metus ut tincidunt rhoncus, sapien elit dignissim purus, eget vulputate enim ipsum convallis tellus. Vivamus id posuere turpis, a ullamcorper turpis. Donec vestibulum nisi vel lorem sollicitudin, ac efficitur nulla iaculis.</p>
+  			</div>
+		</div>
+
+		<div class="media">
+			<div class="media-left">
+		    	<a href="#">
+		     	<img class="media-object" src="https://static.pexels.com/photos/167703/pexels-photo-167703-medium.jpeg" alt="">
+		    	</a>
+			</div>
+			<div class="media-body">
+		   		<h4 class="media-heading">Zawartość torebki</h4>
+		    	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.</p>
+			</div>
+		</div>
+
+		<div class="media">
+			<div class="media-left">
+		   		<a href="#">
+		    	<img class="media-object" src="https://static.pexels.com/photos/167703/pexels-photo-167703-medium.jpeg" alt="">
+		    </a>
+			</div>
+			<div class="media-body">
+		   		<h4 class="media-heading">Zawartość torebki</h4>
+		   		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.</p>
+			</div>
+		</div>
+
+		<div class="media">
+			<div class="media-left">
+		   		<a href="#">
+		    	<img class="media-object" src="https://static.pexels.com/photos/167703/pexels-photo-167703-medium.jpeg" alt="">
+		    </a>
+			</div>
+			<div class="media-body">
+		   		<h4 class="media-heading">Zawartość torebki</h4>
+		   		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.</p>
+			</div>
+		</div>
+	</div>
+		<div class="form container">
+			<form>
+				<h4>Jeśli masz swoje przemyślenia - napisz do nas</h4>
+				<div class="form-group">
+					<label for="exampleInputName">Imię</label>
+		 			<input type="text" name="name" class="form-control" id="exampleInputName" placeholder="Małgosia"><br />
+		 		</div>
+		 		<div class="form-group">
+					<label for="exampleInputEmail">e-mail</label>
+		 			<input type="email" name="email" class="form-control" id="exampleInputEmail" placeholder="adres@example.com"><br /><br />
+		 		</div>
+				<textarea name="InputMessage" class="form-control" placeholder="Kilka słów od Ciebie" rows="3" required></textarea><br />
+				<button type="submit" class="btn btn-info">Wyślij</button><br />
+			</form>
+		</div>
+
+		<div class="panel-footer container">Copyright © 2016 All Rights Reserved</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>	
+
+</body>
+</html>
